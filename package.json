@@ -1,8 +1,8 @@
 {
-  "name": "hello-world",
+  "name": "gusto",
   "version": "0.1.0",
   "bin": {
-    "hello-world": "bin/hello-world.js"
+    "gusto": "bin/gusto.js"
   },
   "scripts": {
     "build": "tsc",

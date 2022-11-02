@@ -1,10 +1,10 @@
 import { Stack, StackProps } from 'aws-cdk-lib';
 import { Construct } from 'constructs';
-import { HelloWorld } from './hello-world';
+import { Gusto } from './gusto';
 
-export class HelloWorldStack extends Stack {
+export class GustoStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
-    new HelloWorld(this, 'hello-world');
+    new Gusto(this, 'gusto-world');
   }
 }
