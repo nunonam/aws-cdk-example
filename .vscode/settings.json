@@ -1,0 +1,10 @@
+{
+  "rest-client.environmentVariables": {
+    "development": {
+      "baseurl": "https://gustodev.moimplugin.com/"
+    },
+    "production": {
+      "baseurl": "https://gustoapi.moimplugin.com/"
+    }
+  }
+}

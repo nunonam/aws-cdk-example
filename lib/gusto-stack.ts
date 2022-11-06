@@ -13,11 +13,12 @@ export class GustoStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
 
-    // we will add all the constructs here
-    // replace bucket name with a unique name
-    // const circleCiGwpBucket = new s3.Bucket(this, "CircleCIGwpAuthExampleBucket", {
+
+    // S3 bucket 생성
+    // new s3.Bucket(this, 'aws-s3-sandbox-cdktemp-dev', {
     //   bucketName: "<YOUR_BUCKET_NAME>",
-    // });
+    //   versioned: true
+    // })
 
     // const circleCiGwpTable = new dynamodb.Table(this, "CircleCIGwpAuthExampleTable", {
     //   tableName: "CircleCIGwpAuthExampleTable",
