@@ -1,9 +1,15 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from 'aws-cdk-lib';
-import { GustoStack } from '../lib/gusto-stack';
+import { GustoStack } from '../lib/GustoStack';
+import { GustoStackDev } from '../lib/GustoStackDev';
 
 const app = new cdk.App();
+
+
+new GustoStackDev(app, 'GustoStackDev', {
+});
+
 new GustoStack(app, 'GustoStack', {
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
